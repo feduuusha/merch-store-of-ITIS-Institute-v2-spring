@@ -1,0 +1,17 @@
+
+services:
+  merch-db:
+    container_name: merch-db
+    image: postgres:latest
+    ports:
+      - '5454:5432'
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=pass
+      - POSTGRES_DB=merch
+    networks:
+      - merch-network
+
+networks:
+  merch-network:
+    driver: bridge

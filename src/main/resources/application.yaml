@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: merchstore-kotlin
+  datasource:
+    url: jdbc:postgresql://localhost:5454/merch
+    username: user
+    password: pass
